@@ -1,0 +1,114 @@
+/* Base reset and font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #ffe9f3);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ff4081;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#difficulty, #timer {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#question {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#options {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#options label {
+  display: block;
+  margin: 10px 0;
+  background-color: #fff0f5;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#options input[type="radio"] {
+  margin-right: 10px;
+}
+
+#options label:hover {
+  background-color: #ffe0eb;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff80ab;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff5c8d;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.level-btn {
+  margin: 10px;
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #ffcde5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.level-btn:hover {
+  background-color: #ffb6d0;
+}
+
+#playAgainBtn {
+  margin-top: 20px;
+  background-color: #d1c4e9;
+  color: #333;
+}
+
+#playAgainBtn:hover {
+  background-color: #b39ddb;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrainFizz 🍬</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>🧠 BrainFizz 🍬</h1>
+
+    <div id="start-screen">
+      <h2>Select a Difficulty Level</h2>
+      <button class="level-btn" data-level="Easy">🍭 Easy</button>
+      <button class="level-btn" data-level="Medium">🍩 Medium</button>
+      <button class="level-btn" data-level="Hard">🌶️ Hard</button>
+    </div>
+
+    <div id="quiz-screen" style="display: none;">
+      <p id="difficulty"></p>
+      <p id="timer">Time Left: 10s</p>
+      <form id="quizForm">
+        <div id="question">Loading...</div>
+        <div id="options"></div>
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+      <div id="result"></div>
+      <button id="playAgainBtn" style="display: none;">🔁 Play Again</button>
+    </div>
+  </div>
+
+ <audio id="correctSound" src="sounds/correct.mp3" preload="auto"></audio>
+ <audio id="wrongSound" src="sounds/wrong.mp3" preload="auto"></audio>
+
+ <!-- jQuery CDN -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+ <!-- Custom JavaScript -->
+ <script src="script.js"></script>
+</body>
+</html>
